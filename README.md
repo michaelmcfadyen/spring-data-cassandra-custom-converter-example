@@ -9,7 +9,7 @@
  - Calls the POST endpoint twice to add data to db
  - Calls GET endpoint to retrieve all data
  
- ####Schema
+ #### Schema
  
  ```
 CREATE KEYSPACE test WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};
