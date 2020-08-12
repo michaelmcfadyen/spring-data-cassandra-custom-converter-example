@@ -1,0 +1,4 @@
+spring.data.cassandra:
+  contactPoints: localhost:9042
+  localDatacenter: datacenter1
+  keyspaceName: test
