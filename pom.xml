@@ -14,9 +14,9 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+<!--	<properties>-->
+<!--		<java.version>11</java.version>-->
+<!--	</properties>-->
 
 	<dependencies>
 		<dependency>
@@ -26,6 +26,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core -->
+		<dependency>
+			<groupId>io.dropwizard.metrics</groupId>
+			<artifactId>metrics-core</artifactId>
+			<version>3.2.6</version>
 		</dependency>
 
 		<dependency>
@@ -38,6 +44,18 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.datastax.oss.simulacron</groupId>
+			<artifactId>simulacron-native-server</artifactId>
+			<version>0.10.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.datastax.oss.simulacron</groupId>
+			<artifactId>simulacron-driver-3x</artifactId>
+			<version>0.10.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.projectreactor</groupId>
